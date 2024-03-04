@@ -161,9 +161,6 @@ grafana:
   #keep grafana timezone same as other pods, which is set by .Values.commonEnvs.TZ
   env:
     TZ: "UTC"
-  persistence:
-    enabled: true
-    size: 4Gi
   ingressServiceName: ""
   ingressServicePort: ""
 
