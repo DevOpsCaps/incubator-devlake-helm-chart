@@ -158,6 +158,7 @@ grafana:
   #keep grafana timezone same as other pods, which is set by .Values.commonEnvs.TZ
   env:
     TZ: "UTC"
+  #removing pvc due to eks issue
   ingressServiceName: ""
   ingressServicePort: ""
 
